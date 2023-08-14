@@ -97,7 +97,7 @@ def test_regex_last_part(input_filepath):
 # Configuration                                                                #
 ################################################################################
 
-READ_BLOCK_SIZE = 1 * 1024
+READ_BLOCK_SIZE = 16 * 1024
 READ_MARGIN_SIZE = 20
 
 ################################################################################
@@ -111,8 +111,8 @@ def main():
 
     input_filepath = sys.argv[1]
     
-    test_regex_initial_part(input_filepath)
-    #test_regex_last_part(input_filepath)
+    #test_regex_initial_part(input_filepath)
+    test_regex_last_part(input_filepath)
 
 if __name__ == '__main__':
     try:
